@@ -23,7 +23,7 @@ function App() {
   return (
     <Router>
     
-    <Route path="/" exact> 
+    <Route exact path="/" > 
     <Beer/>   
     </Route>
     <Route path="/main" component={Main} />
@@ -31,7 +31,7 @@ function App() {
     <Route path="/details/:Id" component={Details} />      
     <Route path="/random" component={Random} />  
     <Switch>
-    <Link to="/"exact><Navbar/></Link>
+    <Link to="/"><Navbar/></Link>
     </Switch> 
 
     </Router>

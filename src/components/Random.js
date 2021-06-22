@@ -16,7 +16,6 @@ class Random extends Component {
             .then((result) => result.json())
             .then((result) => result)
             .then((result) => this.setState({ data: result,isLoaded:true }))
-            console.log(this.isLoaded)
     }
 
     render() { 
@@ -34,12 +33,12 @@ class Random extends Component {
                         <h6>First brewed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.state.data.first_brewed}</h6><br />
                         <h6>Attenuation Level:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.state.data.attenuation_level}</h6><br />
                         <p>{this.state.data.description}</p><br />
-                        <Link to="/" exact><div className="img"></div></Link>
+                        <Link to="/main"><div className="img"></div></Link>
                     </div></div>
-                    :
-                    setTimeout(() => {
-                         <div className="loader">Loading....</div>
-                    }, 3000)
+                    : 
+                    <div className="vs">
+                    <div className="loader">Loading....</div>
+                     </div>
                    }
            
             </div> 

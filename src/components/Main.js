@@ -20,9 +20,9 @@ componentDidMount(){
     render() { 
         return ( 
                 <div> 
-             {this.state.data.map((ele,id) => <Mainitem
+             {this.state.data.map((ele,i) => <Mainitem
                     daten={ele}
-                    key={ele.id}
+                    key={ele._id}
                     
                 />)}
                

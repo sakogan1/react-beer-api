@@ -53,3 +53,10 @@ img{
     width: 100vw;
     height: 25vh;
 }
+.vs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
