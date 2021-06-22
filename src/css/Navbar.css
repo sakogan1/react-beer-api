@@ -1,0 +1,13 @@
+#Navbar{
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid black;
+    position:sticky;
+    bottom: 0;
+    width: 100%;
+    min-height:8vh;
+    background-image: url(/src/images/Navbar.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
